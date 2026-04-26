@@ -1,0 +1,4 @@
+evals:
+  - name: "Platform Alignment Test"
+    input: "AI Marketing Plan"
+    expected_output_contains: ["X:", "LinkedIn:", "Instagram:"]

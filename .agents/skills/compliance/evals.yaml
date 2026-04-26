@@ -1,0 +1,4 @@
+evals:
+  - name: "Safety Check Test"
+    input: "Post with aggressive language"
+    expected_output_contains: ["FAIL", "reason"]

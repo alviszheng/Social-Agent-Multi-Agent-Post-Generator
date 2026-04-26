@@ -1,0 +1,15 @@
+tools:
+  - name: search_tool
+    description: "Simulated search tool that retrieves trending topics and related insights. Internally uses Gemini to simulate real-time web results."
+    parameters:
+      query: "string"
+
+  - name: browser_tool
+    description: "Simulated browser tool to extract text from a URL."
+    parameters:
+      url: "string"
+
+  - name: trend_analyzer
+    description: "Analyzes social media trends for a given niche."
+    parameters:
+      niche: "string"

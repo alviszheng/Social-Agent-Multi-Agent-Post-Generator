@@ -1,0 +1,6 @@
+{
+  "name": "Social Agent Multi-Agent Post Generator",
+  "description": "A sophisticated multi-agent system powered by Gemini for generating platform-specific social media posts with research, planning, editing, and compliance checks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Content Generation", "Multi-Agent Orchestration", "Search & Research"]
+}

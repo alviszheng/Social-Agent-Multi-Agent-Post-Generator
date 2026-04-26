@@ -1,0 +1,13 @@
+evals:
+  - name: "Topic Decomposition Test"
+    input: "Artificial Intelligence in Healthcare"
+    expected_output_contains:
+      - "angles"
+      - "subtopics"
+      - "hook"
+    threshold: 0.8
+  - name: "Vague Topic Handle"
+    input: "Coffee"
+    expected_output_contains:
+      - "educational"
+      - "culture"

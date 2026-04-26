@@ -1,0 +1,32 @@
+workflow:
+  name: "Social Media Post Generation Pipeline"
+  steps:
+    - step: 1
+      agent: planner
+      input: "{{topic}}"
+      output_var: "content_plan"
+      description: "Decomposes the topic into angles and subtopics."
+
+    - step: 2
+      agent: researcher
+      input: "{{content_plan}}"
+      output_var: "research_data"
+      description: "Gathers keywords, stats, and hashtags based on the plan."
+
+    - step: 3
+      agent: generator
+      input: "{{content_plan}}, {{research_data}}"
+      output_var: "draft_posts"
+      description: "Generates platform-specific social posts."
+
+    - step: 4
+      agent: editor
+      input: "{{draft_posts}}"
+      output_var: "refined_posts"
+      description: "Polishes tone and clarity."
+
+    - step: 5
+      agent: compliance
+      input: "{{refined_posts}}, {{research_data}}"
+      output_var: "final_approved_posts"
+      description: "Validates facts and safety."

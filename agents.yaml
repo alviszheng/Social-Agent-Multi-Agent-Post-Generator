@@ -1,0 +1,35 @@
+agents:
+  - name: planner
+    model: gemini-3-flash-preview
+    skill_path: .agents/skills/planner
+    tools: [search_tool]
+    temperature: 0.7
+    objective: "Decompose topics into actionable angles"
+
+  - name: researcher
+    model: gemini-3-flash-preview
+    skill_path: .agents/skills/research
+    tools: [search_tool, browser_tool]
+    temperature: 0.3
+    objective: "Gather keywords and audience stats"
+
+  - name: generator
+    model: gemini-3-flash-preview
+    skill_path: .agents/skills/content_generator
+    tools: []
+    temperature: 0.8
+    objective: "Create high-engagement social copy"
+
+  - name: editor
+    model: gemini-3-flash-preview
+    skill_path: .agents/skills/editor
+    tools: []
+    temperature: 0.5
+    objective: "Refine clarity and tone"
+
+  - name: compliance
+    model: gemini-3-flash-preview
+    skill_path: .agents/skills/compliance
+    tools: []
+    temperature: 0.1
+    objective: "Ensure factual safety"

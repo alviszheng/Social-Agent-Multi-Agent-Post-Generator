@@ -1,0 +1,11 @@
+[User Input: Topic] 
+      |
+      v
+[Planner Agent] --(Extract Keywords)--> [Search Tool]
+      |                                    |
+      | <------------(Raw Results)---------|
+      v
+[Decomposition Logic]
+      |
+      v
+[Content Plan JSON]

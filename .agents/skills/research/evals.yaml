@@ -1,0 +1,4 @@
+evals:
+  - name: "Research Depth Test"
+    input: "Remote Work Trends 2024"
+    expected_output_contains: ["keywords", "hashtags", "sentiment"]

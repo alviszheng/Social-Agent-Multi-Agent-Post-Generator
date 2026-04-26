@@ -1,0 +1,4 @@
+evals:
+  - name: "Clarity Improvement Test"
+    input: "Rough draft with typos"
+    expected_output_contains: ["refined", "clarity"]
